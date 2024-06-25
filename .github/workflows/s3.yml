@@ -2,7 +2,7 @@ on:
     push:
       branches:
       -  main
-  jobs:
+ jobs:
     build-and-deploy:
       runs-on: ubuntu-latest
       steps:
@@ -17,4 +17,4 @@ on:
           aws-region: us-east-1
   
       - name: s3 deploy
-        run: aws s3 cp . s3://nisheshtest/ --recursive
+        run: aws s3 cp . s3://myfirstbuckethello/ --recursive
